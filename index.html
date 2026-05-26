@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宏观观测周报</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6f8;
+      --ink: #1d2733;
+      --muted: #667085;
+      --line: #d7dde5;
+      --panel: #ffffff;
+      --accent: #245b7f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    header {
+      padding: 30px 40px 24px;
+      background: #17324d;
+      color: #fff;
+      border-bottom: 4px solid #d6a23a;
+    }
+    header h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: 0; }
+    header p { margin: 0; color: #dbe7f3; }
+    main { max-width: 980px; margin: 0 auto; padding: 28px 40px 48px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .report-row {
+      display: grid;
+      grid-template-columns: 130px 1fr 110px;
+      gap: 12px;
+      align-items: center;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+      color: inherit;
+      text-decoration: none;
+    }
+    .report-row:first-child { border-top: 0; padding-top: 0; }
+    .report-row:hover strong { color: var(--accent); }
+    .report-row span, .report-row em { color: var(--muted); font-style: normal; }
+    .empty { color: var(--muted); }
+    @media (max-width: 720px) {
+      header, main { padding-left: 18px; padding-right: 18px; }
+      .report-row { grid-template-columns: 1fr; gap: 3px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>宏观观测周报</h1>
+    <p>最近 10 周公开共享版，最新更新：2026-05-26</p>
+  </header>
+  <main>
+    <section class="panel">
+      
+        <a class="report-row" href="reports/2026-05-26/">
+          <span>2026-05-26</span>
+          <strong>混合震荡，等待确认</strong>
+          <em>置信度 0.75</em>
+        </a>
+        
+
+        <a class="report-row" href="reports/2026-05-19/">
+          <span>2026-05-19</span>
+          <strong>混合震荡，等待确认</strong>
+          <em>置信度 0.82</em>
+        </a>
+        
+    </section>
+  </main>
+</body>
+</html>
